@@ -110,7 +110,7 @@ window.addEventListener("load", function() {
                               <li>Distance from Earth: ${json[num].distance}</li>
                               <li>Number of Moons: ${json[num].moons}</li>
                            </ol>
-                           <img src="${json[2].image}">`
+                           <img src="${json[num].image}">`
                   });
                });
             });
