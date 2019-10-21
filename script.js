@@ -90,9 +90,10 @@ window.addEventListener("load", function() {
             fuel.innerHTML = 'Fuel level high enough for launch';
             let cargo = document.querySelector("#cargoStatus");
             cargo.innerHTML = 'Cargo mass low enough for launch';
-            event.preventDefault();
-
-            window.addEventListener("submit", function() {
+            event.preventDefault();     
+         }  
+         
+         window.addEventListener("submit", function() {
             let json = [];
                fetch("https://handlers.education.launchcode.org/static/planets.json").then( function(response) {
                   response.json().then( function(json) {
@@ -114,7 +115,7 @@ window.addEventListener("load", function() {
                   });
                });
             });
-         }                       
+
       });
    });  
    
